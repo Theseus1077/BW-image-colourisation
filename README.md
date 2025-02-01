@@ -24,47 +24,6 @@ from torchvision import datasets, transforms
 dataset = datasets.CIFAR10(root='./data', train=True, download=True, transform=transforms.ToTensor())
 ```
 
-## Installation
-To set up the project, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Theseus1077/BW-image-colourisation.git
-   cd BW-image-colourisation
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the training script:
-   ```bash
-   python train.py
-   ```
-4. Test the model with custom images:
-   ```bash
-   python test.py --image_path path/to/your/image.jpg
-   ```
-
-## Usage
-- Train the model using the provided dataset.
-- Test the trained model on grayscale images.
-- Modify model parameters in `config.py` for experimentation.
-
-## Model Architecture
-The project utilizes a **U-Net** based deep learning architecture, commonly used for image segmentation and restoration tasks. The model consists of:
-- **Encoder**: Extracts feature representations from grayscale images.
-- **Decoder**: Predicts color channels based on learned features.
-- **Skip connections**: Preserve fine details during reconstruction.
-
-## Challenges Faced
-- **Hardware limitations**: Training deep networks required optimization to reduce resource consumption.
-- **Dataset constraints**: Additional data augmentation was applied to enhance generalization.
-- **Color accuracy**: Loss functions such as perceptual loss were introduced to improve results.
-
-## Future Improvements
-- Implementation of GANs for more realistic colorization.
-- Integration of user-guided color inputs.
-- Extending the model to support higher-resolution images.
-
 ## Contributors
 - [Theseus1077](https://github.com/Theseus1077)
 
