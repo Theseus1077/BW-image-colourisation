@@ -6,7 +6,6 @@ This project focuses on colorizing black-and-white images using deep learning te
 ## Features
 - Automatic colorization of grayscale images
 - Implementation using PyTorch
-- Pretrained models for better accuracy
 - Custom image testing support
 - Dataset preprocessing and augmentation
 
